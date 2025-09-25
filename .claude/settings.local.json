@@ -7,7 +7,18 @@
       "mcp__ide__executeCode",
       "Bash(pip install:*)",
       "Bash(playwright install:*)",
-      "Bash(git push:*)"
+      "Bash(git push:*)",
+      "Bash(start index.html)",
+      "WebFetch(domain:www.golden-gate-clinic.jp)",
+      "Bash(npx playwright install:*)",
+      "Bash(node:*)",
+      "Bash(git add:*)",
+      "Bash(gh repo view:*)",
+      "WebFetch(domain:sato7564.github.io)",
+      "Bash(gh run list:*)",
+      "Bash(gh workflow:*)",
+      "Bash(gh api:*)",
+      "Bash(git commit:*)"
     ],
     "deny": [],
     "ask": []
