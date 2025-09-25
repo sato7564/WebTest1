@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Home } from 'lucide-react';
+import navigationBg from '../src/assets/navigation-background.png';
 
 export function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -38,7 +39,7 @@ export function Navigation() {
           : 'relative'
       }`}
       style={{
-        backgroundImage: `url('/images/navigation-background.png')`,
+        backgroundImage: `url(${navigationBg})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat'

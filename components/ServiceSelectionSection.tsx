@@ -1,3 +1,10 @@
+import kakesenImage from '../src/assets/kakesen.png';
+import pira1Image from '../src/assets/pira1.jpg';
+import pira2Image from '../src/assets/pira2.jpg';
+import pira3Image from '../src/assets/pira3.jpg';
+import pira4Image from '../src/assets/pira4.jpg';
+import pira5Image from '../src/assets/pira5.jpg';
+
 interface ServiceOption {
   id: string;
   title: string;
@@ -11,31 +18,31 @@ export function ServiceSelectionSection() {
       id: 'group-fitness',
       title: 'グループレッスン',
       description: '仲間と楽しく',
-      image: '/images/pira1.jpg'
+      image: pira1Image
     },
     {
       id: 'energy-boost',
       title: 'エネルギー向上',
       description: '活力アップ',
-      image: '/images/pira2.jpg'
+      image: pira2Image
     },
     {
       id: 'cardio-fitness',
       title: '有酸素運動',
       description: '持久力強化',
-      image: '/images/pira3.jpg'
+      image: pira3Image
     },
     {
       id: 'stress-relief',
       title: 'ストレス解消',
       description: '心身リラックス',
-      image: '/images/pira4.jpg'
+      image: pira4Image
     },
     {
       id: 'core-wellness',
       title: 'コア・ウェルネス',
       description: '体幹バランス',
-      image: '/images/pira5.jpg'
+      image: pira5Image
     }
   ];
 
@@ -44,11 +51,11 @@ export function ServiceSelectionSection() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <div className="flex items-center justify-center mb-6">
-            <img src="/images/kakesen.png" alt="" className="h-16 mr-4" />
+            <img src={kakesenImage} alt="" className="h-16 mr-4" />
             <h2 className="text-2xl md:text-3xl font-luxury-heading text-secondary-brown-dark whitespace-nowrap">
               あなたに合ったピラティスを...あなただけに...
             </h2>
-            <img src="/images/kakesen.png" alt="" className="h-16 ml-4" />
+            <img src={kakesenImage} alt="" className="h-16 ml-4" />
           </div>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             どんなお悩みをお抱えでしょうか？

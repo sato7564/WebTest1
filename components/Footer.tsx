@@ -1,11 +1,15 @@
 import { Link } from 'react-router-dom';
+import footerBg from '../src/assets/footer-background.png';
+import rogoImage from '../src/assets/rogo.png';
+import kakkohazimeImage from '../src/assets/kakkohazime.png';
+import kakkoowariImage from '../src/assets/kakkoowari.png';
 
 export function Footer() {
   return (
     <footer
       className="text-white"
       style={{
-        backgroundImage: `url('/images/footer-background.png')`,
+        backgroundImage: `url(${footerBg})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat'
@@ -118,12 +122,12 @@ export function Footer() {
           {/* 電話番号 */}
           <div className="text-center">
             <div className="flex items-center justify-center">
-              <img src="/images/kakkohazime.png" alt="" className="h-12 mr-3" style={{ filter: 'brightness(0) saturate(100%) invert(85%) sepia(45%) saturate(2427%) hue-rotate(15deg) brightness(100%) contrast(85%)' }} />
+              <img src={kakkohazimeImage} alt="" className="h-12 mr-3" style={{ filter: 'brightness(0) saturate(100%) invert(85%) sepia(45%) saturate(2427%) hue-rotate(15deg) brightness(100%) contrast(85%)' }} />
               <div className="flex flex-col items-center">
                 <h3 className="text-xl font-bold text-primary-gold">ご予約・お問い合わせ</h3>
                 <div className="text-2xl font-bold text-primary-gold">tel.092-XXX-XXXX</div>
               </div>
-              <img src="/images/kakkoowari.png" alt="" className="h-12 ml-3" style={{ filter: 'brightness(0) saturate(100%) invert(85%) sepia(45%) saturate(2427%) hue-rotate(15deg) brightness(100%) contrast(85%)' }} />
+              <img src={kakkoowariImage} alt="" className="h-12 ml-3" style={{ filter: 'brightness(0) saturate(100%) invert(85%) sepia(45%) saturate(2427%) hue-rotate(15deg) brightness(100%) contrast(85%)' }} />
             </div>
           </div>
 
@@ -137,7 +141,7 @@ export function Footer() {
 
         {/* ロゴ */}
         <div className="text-center my-8">
-          <img src="/images/rogo.png" alt="ウェルス&ピラティス" className="mx-auto h-96" />
+          <img src={rogoImage} alt="ウェルス&ピラティス" className="mx-auto h-96" />
           <div className="text-lg font-bold mt-2 text-primary-gold">ウェルス&ピラティス</div>
         </div>
 

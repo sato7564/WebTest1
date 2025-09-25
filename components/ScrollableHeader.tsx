@@ -1,3 +1,5 @@
+import headerImage from '../src/assets/new-pilates-header.png';
+
 export function ScrollableHeader() {
 
   return (
@@ -12,7 +14,7 @@ export function ScrollableHeader() {
       <div
         className="absolute inset-0"
         style={{
-          backgroundImage: `url('/images/new-pilates-header.png')`,
+          backgroundImage: `url(${headerImage})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat'

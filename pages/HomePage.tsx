@@ -1,6 +1,16 @@
 import { TwoTierHeader } from '../components/TwoTierHeader';
 import { ServiceSelectionSection } from '../components/ServiceSelectionSection';
 import { useEffect, useState } from 'react';
+import kakesenImage from '../src/assets/kakesen.png';
+import tatemonoImage from '../src/assets/tatemono.png';
+import ban1Image from '../src/assets/1ban.png';
+import ban2Image from '../src/assets/2ban.png';
+import ban3Image from '../src/assets/3ban.png';
+import pira1Image from '../src/assets/pira1.jpg';
+import pira2Image from '../src/assets/pira2.jpg';
+import pira3Image from '../src/assets/pira3.jpg';
+import pira4Image from '../src/assets/pira4.jpg';
+import pira5Image from '../src/assets/pira5.jpg';
 
 export default function HomePage() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -34,11 +44,11 @@ export default function HomePage() {
         <section className="container mx-auto px-4 py-16 bg-gray-50">
           <div className="text-center mb-12">
             <div className="flex items-center justify-center mb-8">
-              <img src="/images/kakesen.png" alt="" className="h-24 mr-4" />
+              <img src={kakesenImage} alt="" className="h-24 mr-4" />
               <h2 className="text-3xl md:text-4xl font-luxury-heading text-secondary-brown-dark whitespace-nowrap">
                 営業時間
               </h2>
-              <img src="/images/kakesen.png" alt="" className="h-24 ml-4" />
+              <img src={kakesenImage} alt="" className="h-24 ml-4" />
             </div>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-6">
               日曜・祝日休診　当院は<span className="text-red-600 font-semibold">完全予約制</span>です。ご来院の際は事前にお電話をお願いいたします。
@@ -231,7 +241,7 @@ export default function HomePage() {
             <div className="flex-shrink-0">
               <div className="w-48 h-48 rounded-full overflow-hidden shadow-lg border-4 border-primary-gold">
                 <img
-                  src="/images/tatemono.png"
+                  src={tatemonoImage}
                   alt="ウェルス&ピラティス 外観"
                   className="w-full h-full object-cover"
                 />
@@ -254,11 +264,11 @@ export default function HomePage() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <div className="flex items-center justify-center mb-8">
-              <img src="/images/kakesen.png" alt="" className="h-24 mr-4" />
+              <img src={kakesenImage} alt="" className="h-24 mr-4" />
               <h2 className="text-3xl md:text-4xl font-luxury-heading text-secondary-brown-dark whitespace-nowrap">
                 初めての方へ
               </h2>
-              <img src="/images/kakesen.png" alt="" className="h-24 ml-4" />
+              <img src={kakesenImage} alt="" className="h-24 ml-4" />
             </div>
             <div className="bg-gray-50 rounded-lg p-8 max-w-4xl mx-auto">
               <p className="text-lg text-gray-700 mb-8 leading-relaxed">
@@ -269,7 +279,7 @@ export default function HomePage() {
                 <div className="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow duration-300">
                   <div className="text-center">
                     <div className="w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                      <img src="/images/1ban.png" alt="1番" className="w-full h-full object-contain" />
+                      <img src={ban1Image} alt="1番" className="w-full h-full object-contain" />
                     </div>
                     <a
                       href="#"
@@ -283,7 +293,7 @@ export default function HomePage() {
                 <div className="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow duration-300">
                   <div className="text-center">
                     <div className="w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                      <img src="/images/2ban.png" alt="2番" className="w-full h-full object-contain" />
+                      <img src={ban2Image} alt="2番" className="w-full h-full object-contain" />
                     </div>
                     <a
                       href="#"
@@ -297,7 +307,7 @@ export default function HomePage() {
                 <div className="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow duration-300">
                   <div className="text-center">
                     <div className="w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                      <img src="/images/3ban.png" alt="3番" className="w-full h-full object-contain" />
+                      <img src={ban3Image} alt="3番" className="w-full h-full object-contain" />
                     </div>
                     <a
                       href="#"
@@ -321,11 +331,11 @@ export default function HomePage() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <div className="flex items-center justify-center mb-8">
-              <img src="/images/kakesen.png" alt="" className="h-24 mr-4" />
+              <img src={kakesenImage} alt="" className="h-24 mr-4" />
               <h2 className="text-3xl md:text-4xl font-luxury-heading text-secondary-brown-dark whitespace-nowrap">
                 アクセス
               </h2>
-              <img src="/images/kakesen.png" alt="" className="h-24 ml-4" />
+              <img src={kakesenImage} alt="" className="h-24 ml-4" />
             </div>
           </div>
 
@@ -392,11 +402,11 @@ export default function HomePage() {
           {/* お問い合わせ */}
           <div className="max-w-2xl mx-auto">
             <div className="flex items-center justify-center mb-8">
-              <img src="/images/kakesen.png" alt="" className="h-20 mr-4" />
+              <img src={kakesenImage} alt="" className="h-20 mr-4" />
               <h3 className="text-3xl font-luxury-heading text-secondary-brown-dark whitespace-nowrap">
                 お問い合わせ
               </h3>
-              <img src="/images/kakesen.png" alt="" className="h-20 ml-4" />
+              <img src={kakesenImage} alt="" className="h-20 ml-4" />
             </div>
 
             <form className="space-y-6" onSubmit={(e) => {
